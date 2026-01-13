@@ -1,0 +1,167 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: green;
+}
+
+h4 {
+    color: orange;
+}
+p {
+    color: purple;
+}
+
+span {
+    color: red;
+}
+
+.premiererp {
+    color: red;
+}
+.deuxiemep {
+    color: blue;
+}
+.troisiemep {
+    color: green;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.premierli {
+    text-align: start;
+}
+
+.deuxiemeli {
+    text-align: center;
+}
+
+.troisiemeli {
+    text-align: end;
+}
+
+.cercle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.circle-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    width: min-content;
+}
+
+#circleblue {
+    background-color: blue;
+}
+
+#circlered {
+    background-color: red;
+}
+
+#circlegreen {
+    background-color: green;
+}
+
+.divmaman2 {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.divmaman2 div {
+    width: 100px;
+    height: 100px;
+}
+
+.div21{
+    background-color: red;
+}
+
+.div22{
+    background-color: blue;
+    align-self: center;
+}
+
+.div23{
+    background-color: yellow;
+    align-self: flex-end;
+}
+
+.divspace-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divspace-between div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.divspace-between div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.divcenter {
+    display: flex;
+    justify-content: center;
+}
+
+.divcenter div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.divcenter div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.divspace-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divspace-around div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.divspace-around div {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border-radius: 50%;
+}
+
+.divspace-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divspace-evenly div {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+}
