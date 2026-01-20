@@ -1,0 +1,296 @@
+:root{
+    --bg-dark: #171717;
+    --white: #FFFFFF;
+    --gray2: #333333;
+    --gray3: #828282;
+    --green2: #27AE60;
+    --dark1: #212121;
+}
+
+body{
+    background-color: var(--bg-dark);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    margin-inline: 40px;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar nav a{
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.section1gauche h1{
+    margin-bottom: 0;
+}
+
+.section1gauche p{
+    color: var(--gray3);
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.section1droite{
+    width: 400px;
+    height: 400px;
+}
+
+.section1droite img{
+    border-radius: 50%;
+    border: 3px solid #202020;
+    padding: 10px;
+    width: 100%;
+}
+
+.btns{
+    gap: 20px;
+}
+
+.btns button{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btns button:first-child{
+    background-color: var(--green2);
+    border: 1px solid var(--green2);
+    color: var(--white);
+}
+
+.btns button:last-child{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+#About{
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    margin-inline: 10%;
+}
+
+#About p{
+    font-weight: 400;
+    margin-block: 50px;
+    margin-inline: 16%;
+}
+
+#About div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.bigcircle{
+    width: 60px;
+    height: 60px;
+    background-color: var(--dark1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.smallcircle{
+    width: 15px;
+    height: 15px;
+    background-color: var(--green2);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box h3{
+    margin-bottom: 2px;
+}
+
+#About .box p{
+    margin: 0;
+}
+
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 0;
+}
+
+#WhatIDo{
+    text-align: center;
+}
+
+#WhatIDo h1{
+    margin-block: 80px;
+}
+
+#WhatIDo div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dobox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 180px;
+    padding: 20px;
+    border-bottom: 2px solid transparent;
+    position: relative;
+
+}
+
+.dobox:nth-child(1),
+.dobox:nth-child(2),
+.dobox:nth-child(3){
+    background-color: var(--dark1);
+}
+
+.dobox p{
+    text-align: left;
+}
+
+.dobox img{
+    width: 50px;
+    height: 50px;
+}
+
+.dobox::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--green2);
+  transition: width 0.3s ease;
+}
+
+.dobox:hover::after{
+  width: 100%;
+}
+
+#Skills{
+    text-align: center;
+}
+
+#Skills h1{
+    margin-block: 80px;
+}
+
+.skills{
+    border: 1px solid var(--gray2);
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--dark1);
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    margin-block: 30px;
+}
+
+.skill h2{
+    font-size: 40px;
+    margin: 0;
+    color: #4F4F4F;
+}
+
+.skill h3{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 4px 0 0 0;
+    color: var(--green2);
+}
+
+#Contact{
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto;
+    background: transparent;
+    font-family: sans-serif;
+}
+
+#Contact h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--white);
+}
+
+#Contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Contact .row{
+    display: flex;
+    gap: 20px;
+}
+
+#Contact input,
+#Contact textarea{
+    flex: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+    font-size: 15px;
+}
+
+#Contact textarea{
+    height: 100px;
+    resize: vertical;
+}
+
+.btn-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#Contact button{
+    width: fit-content;
+    padding: 12px 20px;
+    border: none;
+    background: var(--green2);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px 0;
+    border-top: 1px solid var(--gray2);
+    color: var(--gray3);
+    font-size: 14px;
+}
