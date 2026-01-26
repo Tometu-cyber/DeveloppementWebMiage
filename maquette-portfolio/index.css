@@ -14,7 +14,6 @@ body{
     font-weight: 700;
     margin-inline: 40px;
     padding: 0;
-
 }
 
 .menu-toggle{
@@ -59,11 +58,26 @@ body{
     transition: transform 0.3s ease;
 }
 
-.navbar nav a{
+.navbar nav a, .navbar nav button{
     color: var(--white);
     text-decoration: none;
     margin: 0 15px;
+    padding: 0;
     font-size: 18px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+}
+
+#navMenu{
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav button img{
+    width: auto;
+    height: 28px;
 }
 
 .section1{
@@ -328,6 +342,23 @@ footer{
     font-size: 14px;
 }
 
+/* Mode focus activé */
+/* Masquer image section droite */
+body.focus-mode .section1droite{
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* Masquer éléments décoratifs */
+body.focus-mode .bigcircle,
+body.focus-mode .dobox img {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* Responsive Design */
 @media (max-width: 768px){
     body{
         margin-inline: 20px;
@@ -363,7 +394,7 @@ footer{
         transform: translateX(0);
     }
 
-    .navbar nav a{
+    .navbar nav a, .navbar nav button{
         padding: 15px 0;
         border-bottom: 1px solid var(--gray2);
     }
@@ -372,7 +403,7 @@ footer{
         border-bottom: none;
     }
 
-    .navbar nav a{
+    .navbar nav a, .navbar nav button{
         font-size: 14px;
     }
 

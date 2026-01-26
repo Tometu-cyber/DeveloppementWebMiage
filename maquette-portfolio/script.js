@@ -53,3 +53,10 @@ window.addEventListener('scroll', function() {
     
     lastScroll = currentScroll;
 });
+
+// Mode focus
+const focusToggle = document.getElementById('focusToggle');
+
+focusToggle.addEventListener('click', () => {
+    document.body.classList.toggle('focus-mode');
+});
