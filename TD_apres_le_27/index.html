@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header id="mainHeader">Header</header>
+
+    <div class="exo">
+        <button id="btn">Clique-moi</button>
+        <p id="result"></p>
+    </div>
+
+    <div class="exo">
+        <div id="divexo1">div exo 1</div>
+    </div>
+
+    <div class="exo">
+        <div class="section2">
+            <div class="section2gauche">
+                <p>Position X: <span id="posX">0</span></p>
+                <p>Position Y: <span id="posY">0</span></p>
+            </div>
+            <div class="section2droite">
+                <div id="tracker"></div>
+                <div class="box" id="boxMouse"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exo">
+        <div>
+            <p id="scrollMessage" style="position: fixed; top: 70px; left: 10px;">Niveau de scroll : 0px</p>
+        </div>
+        <!-- <div style="height: 2000px;">
+            <p id="scrollMessage" style="position: fixed; top: 70px; left: 10px;">Niveau de scroll : 0px</p>
+        </div> -->
+    </div>
+
+    <div class="exo">
+        <form id="userForm">
+            <label for="userInput">Entrez un texte :</label>
+            <input type="text" id="userInput" name="userInput">
+            <button type="submit">Valider</button>
+        </form>
+        <p id="formMessage" style="color: red;"></p>
+        <p id="formResult"></p>
+    </div>
+
+    <div class="exo">
+        <div id="calculator">
+            <div id="display">0</div>
+            <div>
+                <button class="calc-btn">7</button>
+                <button class="calc-btn">8</button>
+                <button class="calc-btn">9</button>
+                <button class="calc-btn operator">/</button>
+                <button class="calc-btn">4</button>
+                <button class="calc-btn">5</button>
+                <button class="calc-btn">6</button>
+                <button class="calc-btn operator">*</button>
+                <button class="calc-btn">1</button>
+                <button class="calc-btn">2</button>
+                <button class="calc-btn">3</button>
+                <button class="calc-btn operator">-</button>
+                <button class="calc-btn">0</button>
+                <button class="calc-btn">C</button>
+                <button class="calc-btn">=</button>
+                <button class="calc-btn operator">+</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
